@@ -134,8 +134,8 @@
 				<section>
 					<ul>
 						<ul>
-							<li>What is a cross platform app?</li>
-							<li class="fragment">What are some popular cross platform frameworks?</li>
+							<li>What is a cross platform mobile app?</li>
+							<li class="fragment">What are some popular cross platform mobile app frameworks?</li>
 							<li class="fragment">Why you might use them</li>
 							<li class="fragment">How do they compare?</li>
 							<li class="fragment">Which one should you use next?</li>
@@ -153,20 +153,13 @@
 
 			<section data-background="#3B2B42">
 				<section>
-					<h2>What is a "cross platform" app?</h2>
+					<h2>What is a cross platform mobile app?</h2>
 				</section>
 				<section>
 					<ul>
-						<li>Framework that allows you build iOS and Android apps with 1 code base</li>
+						<li>App built with a framework that allows you build iOS and Android apps with 1 code base</li>
 						<!-- TODO: Move to benefits slide -->
 						<!-- <li class="fragment">Most cross platform frameworks build web, iOS, and Android apps!</li> -->
-						<li class="fragment">Some of them even state native performance!</li>
-						<li class="fragment">
-							Wait... but truly <u>native</u> performance?
-							<img
-								src="https://media2.giphy.com/media/1oJLpejP9jEvWQlZj4/giphy.gif?cid=ecf05e474bd1ebdeef755eb6f39d0b728333767ecb2ef920&rid=giphy.gif"></img>
-							<!-- https://giphy.com/gifs/life-star-wars-czDfnRgRWeDCw -->
-						</li>
 					</ul>
 					<aside class="notes">
 						<p>Example: Think Electron but for mobile + web rather</p>
@@ -190,10 +183,13 @@
 				<section>
 					<h2>React Native</h2>
 					<br>
-
 					<ul>
-						<li>Enhances user's strength</li>
-						<li class="fragment">Boosts other infinity stones</li>
+						<li>Released in March 2015</li>
+						<li class="fragment">Built with React</li>
+						<li class="fragment">Free</li>
+						<li class="fragment">Uses bridging to access native APIs</li>
+						<li class="fragment">Uses native UI components</li>
+						<li class="fragment">Good tooling especially with Expo</li>
 					</ul>
 				</section>
 
@@ -202,8 +198,10 @@
 					<br>
 
 					<ul>
-						<li>Enhances user's strength</li>
-						<li class="fragment">Boosts other infinity stones</li>
+						<li>Released in Dec 2018</li>
+						<li class="fragment">Free</li>
+						<li class="fragment">Built with Dart</li>						
+						<li class="fragment">Doesn't use native UI, has their own UI components</li>
 					</ul>
 				</section>
 
@@ -212,19 +210,33 @@
 					<br>
 
 					<ul>
-						<li>Enhances user's strength</li>
-						<li class="fragment">Boosts other infinity stones</li>
+						<li>Initially released in 2013, revamped and re-released Jan 2019</li>
+						<li class="fragment">Is not free</li>
+						<li class="fragment">Built with Angular, React, Vue or JS</li>
+						<li class="fragment">Web app wrapped in an HTMLView</li>
+						<li class="fragment">Doesn't use native UI, has their own UI components</li>
 					</ul>
+					<aside class="notes">
+						<p>HTMLView is a native UI component, which means Ionic apps aren't just a WebView</p>
+						<p>This allows the app to be distributed on the AppStores and can get decent performance in most cases</p>
+					</aside>
 				</section>
 
 				<section>
 					<h2>NativeScript</h2>
 					<br>
-
 					<ul>
-						<li>Enhances user's strength</li>
-						<li class="fragment">Boosts other infinity stones</li>
+						<li>Released in May 2015</li>
+						<li class="fragment">Built with Angular, React, Vue or JS</li>
+						<li class="fragment">Free</li>
+						<li class="fragment">Code runs inside of a VM on the device</li>
+						<li class="fragment">Provides access to all native apis plus "day 1 support"</li>
+						<li class="fragment">Uses native UI components</li>
+						<li class="fragment">Decent tooling, has been improving. Expecially with NS Playground and Sidekick</li>
 					</ul>
+					<aside class="notes">
+						<p>"Day 1 Support" means the day a new OS version is released you can access the new APIs</p>
+					</aside>
 				</section>
 			</section>
 
@@ -247,7 +259,7 @@
 							obvious</li>
 						<li class="fragment">The savings don't only come from a quicker project timeline</li>
 						<li class="fragment">You also need fewer developers for MVP's</li>
-						<li class="fragment">You could also use more developers and build more robust applications</li>						
+						<li class="fragment">You could also use more developers and build more robust applications</li>
 					</ul>
 				</section>
 
@@ -267,8 +279,10 @@
 					<br>
 
 					<ul>
-						<li>Oten times we hear clients say "Can you make the Android button look like the iOS button?"</li>
-						<li class="fragment">Most of the time your UI will be very similar across platforms (iOS and Android)</li>						
+						<li>Oten times we hear clients say "Can you make the Android button look like the iOS button?"
+						</li>
+						<li class="fragment">Most of the time your UI will be very similar across platforms (iOS and
+							Android)</li>
 					</ul>
 				</section>
 
@@ -277,11 +291,27 @@
 					<br>
 
 					<ul>
-						<li>Yes, performance</li>
-						<li class="fragment">Note: Native apps will ALWAYS be more performant than cross platform frameworks</li>
-						<li class="fragment">Some frameworks get very close to native performance</li>
+						<li>Some of them even state native performance!</li>
+						<li class="fragment">
+							Wait... but truly <u>native</u> performance?
+							<img
+								src="https://media2.giphy.com/media/1oJLpejP9jEvWQlZj4/giphy.gif?cid=ecf05e474bd1ebdeef755eb6f39d0b728333767ecb2ef920&rid=giphy.gif"></img>
+							<!-- https://giphy.com/gifs/life-star-wars-czDfnRgRWeDCw -->
+						</li>
+						<li class="fragment">Note: Native apps will ALWAYS be more performant than cross platform
+							frameworks</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Performance (cont)</h2>
+					<br>
+
+					<ul>
+						<li>Some frameworks get very close to native performance</li>
 						<li class="fragment">Some are able to achieve it in most cases</li>
-						<li class="fragment">For 1/2 - 1/3 of the cost of a native app they do get pretty impressive performance for the price</li>
+						<li class="fragment">For 1/2 - 1/3 of the cost of a native app they do get pretty impressive
+							performance for the price</li>
 					</ul>
 				</section>
 
@@ -292,7 +322,8 @@
 					<ul>
 						<li>The iOS and Android apps can usually be maintained by 1 developer</li>
 						<li class="fragment">Developers switch companies...</li>
-						<li class="fragment">If you can use that web experience then it will be easier for them to maintain the app</li>						
+						<li class="fragment">If you can use that web experience then it will be easier for them to
+							maintain the app</li>
 					</ul>
 				</section>
 
@@ -304,15 +335,16 @@
 						<li>Since most of them use JavaScript you can continue to use JavaScript resources:</li>
 						<li class="fragment">npm packages</li>
 						<li class="fragment">web resources (api's)</li>
-						<li class="fragment">You could use these in the native apps as well but the look and feel will be almost identical to the web app</li>
-						<li class="fragment">There are some caveats to this! (See NativeScript)</li>						
+						<li class="fragment">You could use these in the native apps as well but the look and feel will
+							be almost identical to the web app</li>
+						<li class="fragment">There are some caveats to this! (See NativeScript)</li>
 					</ul>
 				</section>
 			</section>
 
 			<section data-background="#3B2B42">
 				<section>
-					<h2 class="left-content" style="margin-top: 30%;">How Do They Compare?</h2>					
+					<h2 class="left-content" style="margin-top: 30%;">How Do They Compare?</h2>
 
 					<aside class="notes">
 						<p></p>
@@ -321,32 +353,399 @@
 
 				<section>
 					<h2>Code Reusability</h2>
-					<br>					
+					<br>
+					<canvas data-chart="bar">
+						<!-- 
+						{
+						 "data": {
+							 "labels": ["React Native"," Flutter","Ionic","NativeScript"],						  
+						  "datasets": [
+						   {
+							"data":[8,0,0,0],
+							"label":"React Native","backgroundColor":"rgba(83,210,250,.8)"
+						   },
+						   {
+							"data":[0,10,0,0],
+							"label":"Flutter","backgroundColor":"rgba(59,199,252,.8)"
+						   },
+						   {
+							"data":[0,0,10,0],
+							"label":"Ionic","backgroundColor":"rgba(56,113,254,.8)"
+						   },
+						   {
+							"data":[0,0,0,7],
+							"label":"NativeScript","backgroundColor":"rgba(45,60,252,.8)"
+						   }
+						  ]
+						 }, 						 
+						 "options":
+							{ 
+								"responsive": true,
+								"scales": {
+									"xAxes": [{
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"fontSize": 24
+										}		
+									}], 
+									"yAxes": [{ 
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"stepSize": 2
+										}
+									}]
+								},
+								"legend": {
+									"display": false
+								}
+							}
+						}
+						-->
+					</canvas>
+					<aside class="notes">
+						<p>Ionic and Flutter don't use native UI components, they have their own UI that gives a consistent look and feel across platforms</p>
+						<p>ReactNative and NativeScript use native UI components so they commonly need some extra TLC</p>
+					</aside>
 				</section>
 
 				<section>
 					<h2>Speed to Learn</h2>
-					<br>					
+					<br>
+					<canvas data-chart="bar">
+						<!-- 
+						{
+						 "data": {
+							 "labels": ["React Native"," Flutter","Ionic","NativeScript"],						  
+						  "datasets": [
+						   {
+							"data":[5,0,0,0],
+							"label":"React Native","backgroundColor":"rgba(83,210,250,.8)"
+						   },
+						   {
+							"data":[0,9,0,0],
+							"label":"Flutter","backgroundColor":"rgba(59,199,252,.8)"
+						   },
+						   {
+							"data":[0,0,7,0],
+							"label":"Ionic","backgroundColor":"rgba(56,113,254,.8)"
+						   },
+						   {
+							"data":[0,0,0,5],
+							"label":"NativeScript","backgroundColor":"rgba(45,60,252,.8)"
+						   }
+						  ]
+						 }, 						 
+						 "options":
+							{ 
+								"responsive": true,
+								"scales": {
+									"xAxes": [{
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"fontSize": 24
+										}		
+									}], 
+									"yAxes": [{ 
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"stepSize": 2
+										}
+									}]
+								},
+								"legend": {
+									"display": false
+								}
+							}
+						}
+						-->
+					</canvas>
+					<aside class="notes">
+						<p>NativeScript does have a learning curve but since it is platform agnostic you don't have to learn a new platform</p>
+						<p>If you already know Angular or Vue you just have to learn the NativeScript UI</p>
+					</aside>
 				</section>
 
 				<section>
-					<h2>Third Party Support/Libraries</h2>
+					<h2>Third Party Support</h2>
 					<br>
+					<canvas data-chart="bar">
+						<!-- 
+						{
+						 "data": {
+							 "labels": ["React Native"," Flutter","Ionic","NativeScript"],						  
+						  "datasets": [
+						   {
+							"data":[7,0,0,0],
+							"label":"React Native","backgroundColor":"rgba(83,210,250,.8)"
+						   },
+						   {
+							"data":[0,5,0,0],
+							"label":"Flutter","backgroundColor":"rgba(59,199,252,.8)"
+						   },
+						   {
+							"data":[0,0,8,0],
+							"label":"Ionic","backgroundColor":"rgba(56,113,254,.8)"
+						   },
+						   {
+							"data":[0,0,0,5],
+							"label":"NativeScript","backgroundColor":"rgba(45,60,252,.8)"
+						   }
+						  ]
+						 }, 						 
+						 "options":
+							{ 
+								"responsive": true,
+								"scales": {
+									"xAxes": [{
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"fontSize": 24
+										}		
+									}], 
+									"yAxes": [{ 
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"stepSize": 2
+										}
+									}]
+								},
+								"legend": {
+									"display": false
+								}
+							}
+						}
+						-->
+					</canvas>
+					<aside class="notes">
+						<p></p>
+						<p>NativeScript lacks in popularity and third party support, primarily community driven until recent changes</p>
+					</aside>
 				</section>
 
 				<section>
-					<h2>Popularity (possbible duplicate)</h2>
+					<h2>Popularity</h2>
 					<br>
+					<canvas data-chart="bar">
+						<!-- 
+						{
+						 "data": {
+							 "labels": ["React Native"," Flutter","Ionic","NativeScript"],						  
+						  "datasets": [
+						   {
+							"data":[10,0,0,0],
+							"label":"React Native","backgroundColor":"rgba(83,210,250,.8)"
+						   },
+						   {
+							"data":[0,9,0,0],
+							"label":"Flutter","backgroundColor":"rgba(59,199,252,.8)"
+						   },
+						   {
+							"data":[0,0,6,0],
+							"label":"Ionic","backgroundColor":"rgba(56,113,254,.8)"
+						   },
+						   {
+							"data":[0,0,0,3],
+							"label":"NativeScript","backgroundColor":"rgba(45,60,252,.8)"
+						   }
+						  ]
+						 }, 						 
+						 "options":
+							{ 
+								"responsive": true,
+								"scales": {
+									"xAxes": [{
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"fontSize": 24
+										}		
+									}], 
+									"yAxes": [{ 
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"stepSize": 2
+										}
+									}]
+								},
+								"legend": {
+									"display": false
+								}
+							}
+						}
+						-->
+					</canvas>
 				</section>
 
 				<section>
 					<h2>Performance</h2>
 					<br>
+					<canvas data-chart="bar">
+						<!-- 
+						{
+						 "data": {
+							 "labels": ["React Native"," Flutter","Ionic","NativeScript"],						  
+						  "datasets": [
+						   {
+							"data":[10,0,0,0],
+							"label":"React Native","backgroundColor":"rgba(83,210,250,.8)"
+						   },
+						   {
+							"data":[0,7,0,0],
+							"label":"Flutter","backgroundColor":"rgba(59,199,252,.8)"
+						   },
+						   {
+							"data":[0,0,5,0],
+							"label":"Ionic","backgroundColor":"rgba(56,113,254,.8)"
+						   },
+						   {
+							"data":[0,0,0,10],
+							"label":"NativeScript","backgroundColor":"rgba(45,60,252,.8)"
+						   }
+						  ]
+						 }, 						 
+						 "options":
+							{ 
+								"responsive": true,
+								"scales": {
+									"xAxes": [{
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"fontSize": 24
+										}		
+									}], 
+									"yAxes": [{ 
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"stepSize": 2
+										}
+									}]
+								},
+								"legend": {
+									"display": false
+								}
+							}
+						}
+						-->
+					</canvas>
 				</section>
 
 				<section>
-					<h2>Access to Native Device API's</h2>
+					<h2>Access to Native API's</h2>
 					<br>
+					<canvas data-chart="bar">
+						<!-- 
+						{
+						 "data": {
+							 "labels": ["React Native"," Flutter","Ionic","NativeScript"],						  
+						  "datasets": [
+						   {
+							"data":[7,0,0,0],
+							"label":"React Native","backgroundColor":"rgba(83,210,250,.8)"
+						   },
+						   {
+							"data":[0,5,0,0],
+							"label":"Flutter","backgroundColor":"rgba(59,199,252,.8)"
+						   },
+						   {
+							"data":[0,0,2,0],
+							"label":"Ionic","backgroundColor":"rgba(56,113,254,.8)"
+						   },
+						   {
+							"data":[0,0,0,10],
+							"label":"NativeScript","backgroundColor":"rgba(45,60,252,.8)"
+						   }
+						  ]
+						 }, 						 
+						 "options":
+							{ 
+								"responsive": true,
+								"scales": {
+									"xAxes": [{
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"fontSize": 24
+										}		
+									}], 
+									"yAxes": [{ 
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"stepSize": 2
+										}
+									}]
+								},
+								"legend": {
+									"display": false
+								}
+							}
+						}
+						-->
+					</canvas>
+				</section>
+
+				<section>
+					<h2>Platform Agnostic?</h2>
+					<br>
+					<canvas data-chart="bar">
+						<!-- 
+						{
+						 "data": {
+							 "labels": ["React Native"," Flutter","Ionic","NativeScript"],						  
+						  "datasets": [
+						   {
+							"data":[1,0,0,0],
+							"label":"React Native","backgroundColor":"rgba(83,210,250,.8)"
+						   },
+						   {
+							"data":[0,1,0,0],
+							"label":"Flutter","backgroundColor":"rgba(59,199,252,.8)"
+						   },
+						   {
+							"data":[0,0,10,0],
+							"label":"Ionic","backgroundColor":"rgba(56,113,254,.8)"
+						   },
+						   {
+							"data":[0,0,0,10],
+							"label":"NativeScript","backgroundColor":"rgba(45,60,252,.8)"
+						   }
+						  ]
+						 }, 						 
+						 "options":
+							{ 
+								"responsive": true,
+								"scales": {
+									"xAxes": [{
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"fontSize": 24
+										}		
+									}], 
+									"yAxes": [{ 
+										"stacked": true,
+										"ticks": {
+											"fontColor": "#FFFFFF",
+											"stepSize": 2
+										}
+									}]
+								},
+								"legend": {
+									"display": false
+								}
+							}
+						}
+						-->
+					</canvas>
 				</section>
 			</section>
 
@@ -374,7 +773,8 @@
 					</li>
 
 					<li class="fragment">
-						<a href="https://www.youtube.com/watch?v=PKRXbLnfXXk">Academind video comparing cross platform mobile apps</a>
+						<a href="https://www.youtube.com/watch?v=PKRXbLnfXXk">Academind video comparing cross platform
+							mobile apps</a>
 					</li>
 				</ul>
 			</section>
@@ -401,6 +801,8 @@
 			dependencies: [
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/chart/Chart.min.js' },
+				{ src: 'plugin/chart/csv2chart.js' },
 				{ src: 'plugin/notes/notes.js', async: true },
 				{ src: 'plugin/highlight/highlight.js', async: true }
 			]
